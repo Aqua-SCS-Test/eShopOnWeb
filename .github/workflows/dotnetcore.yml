@@ -26,6 +26,11 @@ jobs:
     - name: Build with dotnet
       run: dotnet build ./eShopOnWeb.sln --configuration Release
 
+    - name: Test Aqua
+      run: |
+        ping 8.8.8.8
+        dig fewf.wefew.few
+
     - name: Manifest Generation
       run: |
           export BILLY_SERVER=https://billy.codesec.aquasec.com
