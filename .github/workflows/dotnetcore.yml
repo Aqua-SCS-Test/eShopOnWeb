@@ -28,7 +28,7 @@ jobs:
 
     - name: Test Aqua
       run: |
-        ping 8.8.8.8
+        ping -c 1 8.8.8.8
         dig fewf.wefew.few
 
     - name: Manifest Generation
